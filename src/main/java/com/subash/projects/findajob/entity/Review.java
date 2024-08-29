@@ -3,6 +3,7 @@ package com.subash.projects.findajob.entity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.TypeAlias;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -19,5 +20,5 @@ public class Review {
     private String title;
     private String description;
     private double rating;
-    private String companyId;
+    private ObjectId companyId;
 }
